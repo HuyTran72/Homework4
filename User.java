@@ -1,4 +1,22 @@
-import javax.swing.*;
+class User {
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String password;
+    private String username;
+
+    public User(String firstName, String lastName, String email, String password, String username) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+        this.username = username;
+    }
+
+    public String getUsername() {
+        return username;
+    }
+}
 
 class PasswordException extends Exception {
     public PasswordException(String message) {
@@ -36,22 +54,3 @@ class Minimum8CharactersRequired extends PasswordException {
     }
 }
 
-class User {
-    private String firstName;
-    private String lastName;
-    private String email;
-    private String password;
-    private String username;
-
-    public User(String firstName, String lastName, String email, String password, String username) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.password = password;
-        this.username = username;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-}
