@@ -75,7 +75,7 @@ public class SocialNetworkingApp extends JFrame {
     private ArrayList<UserData> users = new ArrayList<>();
 
     public SocialNetworkingApp() {
-        setTitle("My Social Network");
+        setTitle("Social networking service");
         setSize(400, 300);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
